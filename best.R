@@ -3,7 +3,6 @@ best <- function(state, outcome) {
   ## Check that state and outcome are valid
   ## Return hospital name in that state with lowest 30-day death
   ## rate
-  ## HOLA
   o <- read.csv("outcome-of-care-measures.csv", colClasses = "character")
   if(!state %in% o$State) {
     stop("invalid state")
